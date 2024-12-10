@@ -42,12 +42,12 @@ class Pipeline:
         }
 
     def get_anthropic_models(self):
-         return [
-            {"id": "claude-3-haiku-20240307", "name": "claude-3-haiku"},
-            {"id": "claude-3-opus-20240229", "name": "claude-3-opus"},
-            {"id": "claude-3-sonnet-20240229", "name": "claude-3-sonnet"},
-            {"id": "claude-3-5-sonnet-20241022", "name": "claude-3.5-sonnet"},
-            {"id": "claude-3-5-sonnet-20240620", "name": "claude-3.5-sonnet-2024-06-20"},
+        return [
+            {"id": "claude-3-haiku-latest", "name": "claude-3-haiku"},
+            {"id": "claude-3-opus-latest", "name": "claude-3-opus"},
+            {"id": "claude-3-sonnet-latest", "name": "claude-3-sonnet"},
+            {"id": "claude-3-5-haiku-latest", "name": "claude-3.5-haiku"},
+            {"id": "claude-3-5-sonnet-latest", "name": "claude-3.5-sonnet"},
         ]
 
     async def on_startup(self):
